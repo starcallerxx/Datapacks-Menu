@@ -1,0 +1,1 @@
+execute as @a[scores={datapacks=1..}] run function datapack_menu:commands/settings_menu with storage datapack.menu buttons

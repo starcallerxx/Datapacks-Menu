@@ -1,0 +1,2 @@
+scoreboard objectives remove datapack_menu.config
+scoreboard objectives remove datapacks

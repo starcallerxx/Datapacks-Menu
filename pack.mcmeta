@@ -1,0 +1,23 @@
+{
+    "pack": {
+        "min_format": 107,
+        "max_format": 107,
+        "description": [
+            {
+                "text": "[Datapack Menu]",
+                "color": "#ffd932"
+            },
+            {
+                "text": " - Starcallerx Projects ",
+                "color": "#683edd"
+            },
+            {
+                "text": "- Download on Modrinth",
+                "color": "#47eb5d"
+            }
+        ]
+    },
+    "overlays": {
+        "entries": []
+    }
+}

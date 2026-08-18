@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Toggle Datapack",
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "datapack_name",
+      "width": 150,
+      "label": "Datapack Name:",
+      "label_visible": true,
+      "max_length": 500
+    }
+  ],
+  "can_close_with_escape": true,
+  "after_action": "close",
+  "exit_action": {
+    "label": "Return to Main Menu",
+    "width": 120,
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "datapack_menu:main"
+    }
+  },
+  "actions": [
+    {
+      "label": "Enable",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/datapack enable \"$(datapack_name)\""
+      }
+    },
+    {
+      "label": "Disable",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/datapack disable \"$(datapack_name)\""
+      }
+    },
+    {
+      "label": "List",
+      "width": 100,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/datapack list"
+      }
+    }
+  ]
+}

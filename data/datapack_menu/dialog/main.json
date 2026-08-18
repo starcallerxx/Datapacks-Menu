@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Datapack Menu",
+  "external_title": "Datapacks..",
+  "can_close_with_escape": true,
+  "after_action": "close",
+  "pause": true,
+  "exit_action": {
+    "label": "Close"
+  },
+  "actions": [
+    {
+      "label": "Datapack Settings",
+      "width": 120,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger datapacks"
+      }
+    },
+    {
+      "label": "Toggle Datapacks",
+      "width": 120,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "datapack_menu:toggle_pack"
+      }
+    }
+  ]
+}
