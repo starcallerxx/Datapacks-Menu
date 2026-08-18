@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Datapack Menus",
+  "inputs": [],
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": "Close",
+    "width": 100
+  },
+  "actions": [
+    {
+      "label": "Report an Issue?",
+      "width": 100,
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://github.com/starcallerxx/Datapacks-Menu/issues"
+      }
+    },
+    {
+      "label": "Guide",
+      "width": 100,
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://github.com/starcallerxx/Datapacks-Menu"
+      }
+    },
+    {
+      "label": "Uninstall Datapack Menus",
+      "width": 150,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/function datapack_menu:commands/uninstall"
+      }
+    }
+  ]
+}
